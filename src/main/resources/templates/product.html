@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>Spring Framework Guru - Course Name</title>
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
@@ -11,7 +11,7 @@
     <style>
         .jumbotron {
             background: url('https://d2vvqscadf4c1f.cloudfront.net/rGIBmJUAT46UuLPwXo3K_Fedora_Core_Ultimate2.jpg') no-repeat center center;
-            height: 350px;
+            height: 200px;
             color: white;
             text-shadow: #444 0 1px 1px;
         }
@@ -75,7 +75,7 @@
         }
 
         img {
-            vertical-align: middle;
+            vertical-text-align: middle;
         }
 
         img {
@@ -128,7 +128,42 @@
 
 </head>
 <body>
+<div class="jumbotron">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Link
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"/></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Link</a>
+                        </li>
+                    </ul>
 
+                </div>
+            </div>
+        </nav>
+        <h1>ThymLeaf Course</h1>
+        <p class="lead"> Online Course for Spring</p>
+
+    </div>
+</div>
 <div class="container">
     <div class="row">
         <div class="col-md-12" style="background-color: beige">
@@ -137,31 +172,26 @@
     </div>
     <div class="row">
         <div class="col-md-6" style="background-color: #333333">
-            <div style="background-color: #6cb44a; margin: 5px; width: 506px; height: 290px;">
-                <p>Course Image 506px x 290 px</p>
-                <h3>Coding Assignment</h3>
-                <ol>
-                    <li>Check this project out of GitHub</li>
-                    <li>Add same jumbtron image to this page</li>
-                    <li>Add Course Image url of your choice from index page here and center</li>
-                    <li>add Lipsum text to course decription - see: http://lipsum.pro/</li>
-                    <li>Make Buy now button a bootstap css button</li>
-                    <li>Update index.html page links for courses to this page</li>
-                </ol>
+            <div style="background: url(https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=width:705/https://www.filepicker.io/api/file/nXPqg69JSkuVO2Bqm8wr); color: white;margin: 3px; width: 560px; height: 290px;">
+
             </div>
 
         </div>
         <div class="col-md-6" style="background-color: #586f6f">
-             <div style="background-color: #ededed; margin: 5px;">
-                 <h2>Course Title</h2>
-                 <p> Course description - Add Lipsum text here</p>
-             </div>
+
+            <div style="background-color: #ededed; margin: 5px;">
+                <h2>Course Title</h2>
+                <p> A cum torquent a condimentum senectus donec convallis class proin phasellus ac ut purus curabitur ut lorem a. A integer lacus ullamcorper libero a hendrerit eu scelerisque tincidunt adipiscing vestibulum potenti adipiscing quisque. Hac fringilla congue velit parturient vulputate curabitur ad hac a leo est nisl nulla parturient condimentum odio gravida eu eu id a cursus ultricies suspendisse dolor hac. Praesent lacus porta quisque nostra vel in dis pulvinar auctor inceptos est pharetra sem mus a suspendisse.</p>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-offset-4 col-md-4">
-            <p>Buy Now - button</p>
+            <button type="button" class="btn btn-success">
+                Buy Now
+            </button>
+
             <p>Make this a bootstrap css button</p>
         </div>
     </div>
