@@ -161,12 +161,12 @@
                          src="../static/images/instructor_jt.jpg"
                          th:src="@{/images/instructor_jt.jpg}"
                          class="img-circle"/>
-                    <div class="small course-author-name">
+                    <div class="small course-author-name" th:text="${product.author.lastName} + ' ' + ${product.author.firstName}">
                         Author Name
                     </div>
                 </div>
                 <div class="col-xs-4">
-                    <div class="small course-price">
+                    <div class="small course-price" th:text="${product.price > 0 ? product.price : 'Free'}">
                         $PRICE
                     </div>
                 </div>
