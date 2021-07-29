@@ -132,7 +132,7 @@
 
 </head>
 <body>
-
+<nav></nav>
 <div class="jumbotron" th:replace="fragments/jumbotron :: jumbotron">
     <div class="container">
         <h1>Spring Framework Guru</h1>
@@ -148,13 +148,13 @@
     </div>
     <div class="row course-listing">
         <div class="col-md-6">
-           <div class="row">
-               <div class="col-md-12">
-                   <img src="../static/images/SpringIntroThumb.png"
-                        th:src="@{'/images/'+${product.imageUrl}}"
-                        class="center-block"/>
-               </div>
-           </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="../static/images/SpringIntroThumb.png"
+                         th:src="@{'/images/'+${product.imageUrl}}"
+                         class="center-block"/>
+                </div>
+            </div>
             <div class="row course-listing-extra-info col-xs-12">
                 <div class="col-xs-8">
                     <img align="left" alt="John Thompson"
@@ -172,33 +172,39 @@
                     </div>
                 </div>
             </div>
+
             <div class="row col-xs-12">
-                <ol class="breadcrumb">
-                    <li><a href="#">Cat 1</a></li>
-                    <li><a href="#">Cat 2</a></li>
-                    <li><a href="#">Cat 3</a></li>
-                </ol>
+                <div>
+                    <ol class="breadcrumb">
+                        <li th:each="product1 : ${product.productCategories}">
+                            <a href="#"
+                               th:text="${product1.category}">Cat1</a>
+                        </li>
+                    </ol>
+                </div>
+
             </div>
         </div>
         <div class="col-md-6">
-             <div>
-                 <h2 th:text="${product.courseSubtitle}">Course Title</h2>
-                 <p th:text="${product.courseDescription}">Adipiscing magna vestibulum fringilla tristique ad a primis ante mi inceptos condimentum curabitur
-                     curabitur eu sed nullam ridiculus nunc montes id nostra dui inceptos scelerisque posuere ipsum mus.
-                     A scelerisque libero viverra eu condimentum mollis suscipit mi consectetur semper dis ipsum nisi
-                     in nullam aliquet iaculis in eros euismod bibendum. Adipiscing volutpat fringilla bibendum duis a
-                     maecenas eu lorem accumsan fames sem faucibus ad mauris aliquam nam. Torquent amet adipiscing fusce
-                     fringilla venenatis tristique scelerisque natoque malesuada nostra duis nam augue ridiculus
-                     pulvinar ultrices laoreet in condimentum justo id. Nascetur condimentum maecenas magna metus curae
-                     est odio ad dui fames quam a aenean consequat faucibus nostra lorem adipiscing vestibulum
-                     ullamcorper etiam consectetur. </p>
-             </div>
+            <div>
+                <h2 th:text="${product.courseSubtitle}">Course Title</h2>
+                <p th:text="${product.courseDescription}">Adipiscing magna vestibulum fringilla tristique ad a primis
+                    ante mi inceptos condimentum curabitur
+                    curabitur eu sed nullam ridiculus nunc montes id nostra dui inceptos scelerisque posuere ipsum mus.
+                    A scelerisque libero viverra eu condimentum mollis suscipit mi consectetur semper dis ipsum nisi
+                    in nullam aliquet iaculis in eros euismod bibendum. Adipiscing volutpat fringilla bibendum duis a
+                    maecenas eu lorem accumsan fames sem faucibus ad mauris aliquam nam. Torquent amet adipiscing fusce
+                    fringilla venenatis tristique scelerisque natoque malesuada nostra duis nam augue ridiculus
+                    pulvinar ultrices laoreet in condimentum justo id. Nascetur condimentum maecenas magna metus curae
+                    est odio ad dui fames quam a aenean consequat faucibus nostra lorem adipiscing vestibulum
+                    ullamcorper etiam consectetur. </p>
+            </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-offset-6 col-md-4">
-            <button class="btn-success" th:text="#{button.buy.now}">Buy Now!</button>
+            <button class="btn-success" th:text="#{button.buy.now}">Buy Now! Aidan John</button>
         </div>
     </div>
 </div>
